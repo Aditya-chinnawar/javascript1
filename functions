@@ -1,0 +1,29 @@
+ //function greet(){
+          //  document.write("Hey Aditya")
+        //}
+        //greet()
+        //document.write("Have a nice day Aditya")
+        //greet()
+        //function g(name){
+          //  console.log("Hello " +name)
+        //}
+        //let name = prompt("Enter your name : ")
+        //g(name)
+        
+        //function add(a,b){
+          //  console.log(a+b)
+        //}
+        //add(3,2)
+       // add(20,3)
+    //function a(aa,bb){
+	//return aa+bb;
+	//}
+	//let n1 = parseFloat(prompt("Enter num1 : "))
+	//let n2 = parseFloat(prompt("Enter num2 : "))
+	//let result = a(n1,n2)
+	//console.log("The sum is: "+result)
+    sum = function(n1,n2){
+	let r = n1+n2
+	return r
+	}
+	console.log(sum(20,3))

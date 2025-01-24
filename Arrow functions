@@ -1,0 +1,73 @@
+//ARROW FUCNTIONS WITHOUT PARAMETER 
+let c = ()=>{
+console.log("Hi Aditya")
+}
+c()
+
+//WITH PARAMETERS
+let X = (x,y)=>{
+console.log(x+y)
+}
+X(20,4)
+
+//ARROW FUNCTIONS WITH ONE ARGUMENT WITHOUT USING PARENTHESIS
+
+let greet = x=>console.log(x);
+greet("HEYYYY")
+
+//ARROW FUNCTION WITHOUT ARGUMENT 
+
+let greetings = ()=> console.log("HIII")
+greetings()
+
+//ARROW FUNCTIONS AS AN EXPRESSION
+
+let age = 20
+let welcome = (age<18)?
+()=>console.log("HI ADITYA"):
+()=>console.log("HELLO")
+welcome()											
+
+// SYNCHRONOUS FUNCTIONS
+function_task1()=>{
+    console.log("task1 : start")
+}
+function_task2()=>{
+    console.log("task2 : start")
+}
+function_task3()=>{
+    console.log("task3 : start")
+}
+task1()
+task2()
+task3()
+
+ //ASYNCHRONOUS FUNCTIONS
+        console.log("HI")
+        setTimeout(()=>{
+            console.log("HI IAM WAITING")
+        },10000);
+        console.log("IAM IN LAB")
+
+     //CALLBACK FUNCTIONS
+
+function greet(name,callback){
+console.log(`Hello,${name}!`)
+callback()					//this callback function after greeting
+}
+function sayBYEE(){
+console.log("BYEE")
+}
+//call greet and pass sayBYEE as the callback
+greet("Adi",sayBYEE)
+
+//PROMISE
+let Promise = newPromise((resolve,reject)=>
+{let success = true
+if(success){
+resolve("TASK COMPLETED");
+};else{
+reject("TASK FAILED')
+}
+};
+)

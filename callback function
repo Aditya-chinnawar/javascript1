@@ -1,0 +1,74 @@
+function mainfunction(callback){
+            console.log("Executing main function");
+            callback()
+        }
+        function callbackFunction(){
+            console.log("Callback function executed")
+        }
+        mainfunction(callbackFunction)
+
+        function greet(name,callback){
+console.log("hello"+name);
+callback();
+// executes the callback function after greeting 
+}
+function goodbye(){
+console.log("goodbye")
+}
+greet("Aditya",goodbye);
+
+//
+function greet(name ,callback){
+    console.log("hello" +name);
+    callback();
+}
+greet("pavan" ,function() {
+    console.log("goodbye!")
+});////anonymous function as callback
+
+//Using anonymous function as a callback
+
+function greet(name, callback){
+console.log("hello"+name);
+callback();				//executes the call bac function after greeting
+}
+
+greet("Aditya",function(){
+console.log("goodbye!")
+});
+
+//Asynchronous callback with setTimeout
+
+function fetchData(callback){
+console.log("Fetching data..")
+setTimeout(function(){
+console.log("Data fetched");
+callback();
+},2000);
+}
+
+function processData(){
+console.log("processing the fetched data")
+}
+
+ //using callback with array methods(map)
+ const numbers=[1,2,3,4,5]
+const d = numbers.map(function(num){
+return num*2
+})
+console.log(d)
+
+//
+function registerUser(username,email,callback){
+console.log("registering user"+username);
+setTimeout(function(){
+console.log("user"+username+"registered successfully");
+
+callback(email);  	//calls the call back after registration
+},2000);
+}
+
+function sendwelcomeEmail(email){
+console.log("Sending welcome email tp"+email);
+};
+registerUser("Aditya","Aditya@gmail.com, sendwelcomeEmail)

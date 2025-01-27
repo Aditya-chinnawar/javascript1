@@ -1,0 +1,71 @@
+let mypromise = new Promise((resolve, reject) => {
+    let success = true;
+    if (success) {
+        resolve("The operation is successful");
+    } else {
+        reject("The operation is failed");
+    }
+});
+
+mypromise
+    .then(result => {
+        console.log(result);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+//
+
+let promise = new Promise((resolve,reject)=>{
+resolve(5);
+// initial resolve value is 5
+})
+.then(result =>{
+console.log(result)
+return result * 2
+//return a new value
+}) 
+.then(result =>{
+    console.log(result);
+    return result +3
+})
+.then(result=>{
+    console.log(result);
+})
+.catch(error=>{
+    console.log("error",error)
+})
+// promise with setTimeout
+function delay(ms) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(`Resolved after ${ms} milliseconds`);
+        }, ms);
+    });
+}
+
+delay(2000)
+    .then((message) => {
+        console.log(message); 
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+//
+let fetchData = new Promise((resolve,reject)=>{
+let dataFetched = false;
+setTimeout(()=>{
+if(dataFetched){
+resolve("Data Fetched successfully")
+}else{
+reject("data fetching failed")
+}
+},2000)
+})
+fetchData
+.then(result=>{
+console.log(result)
+})
+.catch(error=>{
+console.log(result)
+})

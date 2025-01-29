@@ -1,0 +1,56 @@
+ <h1 id="aa" class="a">Iam Aditya</h1>
+    <h1 id="b" class="b">Iam Bannu</h1>
+    <h1 id="c" class="a">Iam Hari</h1>
+    <h1 class="a">Iam Pavan</h1>
+    <h2 class="a">Iam Dhansuh</h2>
+    
+    <script>
+        let x=document.querySelector('a')
+        console.log(x)
+      
+      let elementById = document.getElementById('h1');
+      console.log(elementById); 
+    
+     
+      let elementsByClass = document.getElementsByClassName('a');
+      console.log(elementsByClass); 
+      
+      
+      for (let i = 0; i < elementsByClass.length; i++) {
+        console.log(elementsByClass[i]); 
+      }
+    
+      let elementsByTag = document.getElementsByTagName('h1');
+      console.log(elementsByTag); 
+      
+      
+      for (let i = 0; i < elementsByTag.length; i++) {
+        console.log(elementsByTag[i]); 
+      }
+    
+      
+      let x = document.getElementsByClassName('x');
+      console.log(x); 
+      
+      
+      for (let i = 0; i < x.length; i++) {
+        console.log(x[i]); 
+      }
+
+
+
+creating multiple elemnts :
+ // let t = document.createElement("h2")
+        //t.className = "tt"
+        //t.textContent = "Hello Aditya"
+        //console.log(t)
+        //document.body.appendChild(t);
+
+        const t = ['Aditya','pavan','Bannu']
+        for(let i=0; i<t.length; i++){      //i<3
+            let tt = document.createElement("h1")
+            tt.className = "a"
+            tt.textContent=t[i];
+          //  console.log(t[i])
+            console.log(tt)
+        }

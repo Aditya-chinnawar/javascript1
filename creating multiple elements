@@ -1,0 +1,53 @@
+//Creating multiple Elements
+let title 
+for(let i=0; i<3; i++){
+title=document.createElement('h2')
+title.className = "tt"
+title.textcontent = i
+console.log(title)
+}
+// Removing Child Node
+<body>
+  <h1> Removing Child Node </h1>
+<h2> Iam Aditya </h2>
+<ul>
+<li> pavan </li>
+<li> Bannu </li>
+<li> Hari </li>
+</ul>
+
+    <script>
+        const ul = document.querySelector('ul')
+        const lists = document.querySelectorAll('li')
+        for(const list of lists){
+            console.log(`Removing : ${list.textContent}`)
+            ul.removeChild(list)
+        }
+    </script>
+</body>
+//appending the elements to parent node
+<body>
+    <div id="a">
+        <h1>Aditya</h1>
+        <h1>Bannu</h1>
+    </div>
+    <div id="b"></div>
+    <h1>Pavan</h1>
+    <h1>Hari</h1>
+    
+    <script>
+        let n = document.createElement("h2");
+        n.textContent = "GOOD MORNING ADITYA";
+    
+        let p = document.getElementById("b");
+        console.log(p.innerText)
+    //append the new element to the parent node
+        p.appendChild(n);
+    
+        // Log the parent element and its inner text
+        console.log(p);
+        console.log(p.innerText);
+    </script>
+    
+    </script>
+</body>

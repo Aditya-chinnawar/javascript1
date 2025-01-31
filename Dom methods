@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1 id="r">Ram</h1>
+        <h1 id="s">Ravi</h1>
+    </div>
+    <div id="b">
+        <h2>Reo</h2>
+        <h2>sam</h2>
+    </div>
+
+    <script>
+       // let n = document.createElement('h1')
+        //n.innerText = "Rahul"
+        //let pp = document.getElementById('a')
+        //let l = document.getElementById('r')
+        //pp.insertBefore(n,l)
+
+        //let o=document.createElement("h2");
+        //o.textContent="Raju"
+
+        //let p=document.getElementById('a');
+        //let m=document.getElementById('s');
+        
+        //pp.insertBefore(o,m)
+        //console.log(p);
+       // let n = document.getElementById('a')
+       // let l = document.getElementById('r')
+
+        //console.log(l)
+        //n.removechild(l)
+
+        let n = document.createElement("h1")
+        n.innerText = "Version"
+
+        let p = document.getElementById("a")
+        p.replaceChildren(n)
+        console.log(p)
+
+    </script>
+</body>
+</html>

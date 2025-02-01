@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // let age;
+       // let citizen;
+       // let citizenship;
+       // age = prompt("Enter your age:");
+       // citizen = prompt("Are you a citizen? (yes or no)");
+       // citizenship = prompt("Citizenship status (pass or fail):");
+       // if (parseInt(age) >= 18 && citizen === "yes" && citizenship === "pass") {
+       //     document.write("You are eligible to vote.");
+       // } else {
+       //     document.write("You are not eligible to vote.");
+       // }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let b;
+        let premiummember;
+        let descount = 0;
+        b = parseFloat(("Enter your bill :"));
+        premiummember = prompt("premiummember (yes or no)");
+         if(b>=100 ){
+            discount = 20;
+            document.write("20% discount on your bill!! <br>")
+         }else if(bill>50){
+            discount = 10;
+            document.write("10% dicount on your bill! <br>!")
+         }
+         if(premiummember == yes){
+            discount += 5;
+            document.write("you got an extra 5% discount on your bill!!")
+         }
+         let finalamount = bill-(bill*discount/100);
+         document.write("Final amount to pay: " + finalAmount);
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let b;
+let premiummember;
+b = parseFloat(prompt("Enter your bill:"));
+premiummember = prompt("Are you a premium member (yes or no)?");
+
+let discount = 0;  
+if (b >= 100) {
+    discount = 20;  
+    document.write("20% discount on your bill!!<br>");
+} else if (b > 50) {
+    discount = 10;  
+    document.write("10% discount on your bill!!<br>");
+}
+
+if (premiummember.toLowerCase() === "yes") {
+    discount += 5; 
+    document.write("You got an extra 5% discount as a premium member!!<br>");
+}
+
+let finalAmount = b - (b * discount / 100);
+document.write("Final amount to pay: " + finalAmount);
+
+    </script>
+</body>
+</html>

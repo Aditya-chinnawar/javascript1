@@ -1,0 +1,53 @@
+import React from "react";
+
+const FruitList=()=>{
+    const fruits = ['apple','cherry','orange'];
+
+return(
+    <div>
+        <h1>FruitList</h1>
+        <ul>
+            {fruits.map((fruit,index)=>(
+              <li key={index}>{fruit}</li>
+            ))}
+        </ul>
+    </div>
+)
+}
+export default FruitList;
+
+App.js(Greeting.js)
+//import React from 'react';
+
+//import Greeting from './Greeting'
+
+//function App(){
+  //const isLoggedIn = true;
+
+  //return(
+   // <div className = 'App'>
+     // <Greeting isLoggedIn = {isLoggedIn}/>
+    //</div>
+ // )
+//}
+//export default App;
+
+Greeting.js
+import React from "react";
+
+//function Greeting({isLoggedIn}){
+  //  if(isLoggedIn){
+    //    return<h1>Welcome Aditya!</h1>
+    //}else{
+      //  return <h1>Please login</h1>
+   // }
+//}
+
+Map() : allows us to elements in array 
+==function will be applied to all elements
+
+const n = [1,2,3,4,5]
+const d = n.Map(num=>num*2)
+console.log(d)
+
+export default Greeting;

@@ -1,0 +1,58 @@
+// import React, { useReducer } from 'react';
+
+// const appleReducer = (state, action) => {
+//   switch (action.type) {
+//     case 'ADD_APPLE':
+//       return { apples: state.apples + 1};
+//     case 'EAT_APPLE':
+//       return { apples: Math.max(state.apples - 1, 0) }; // Prevent going negative
+//     default:
+//       return state;
+//   }
+// };
+
+// function AppleCounter() {
+//   const [state, dispatch] = useReducer(appleReducer, { apples: 0 });
+
+//   const appleImages = Array.from({ length: state.apples }).map((_, index) => (
+//     <img
+//       key={index}
+//       src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
+//       alt="Apple"
+//       width="50"
+//       style={{ margin: '5px' }}
+//     />
+//   ));
+
+//   return (
+//     <div style={{ textAlign: 'center', marginTop: '50px' }}>
+//       <h1>Apple Tracker</h1>
+//       <div>{appleImages}</div>
+//       <p>You have {state.apples} apple{state.apples !== 1 && 's'}</p>
+//       <button onClick={() => dispatch({ type: 'ADD_APPLE' })}>Add Apple</button>
+//       <button onClick={() => dispatch({ type: 'EAT_APPLE' })}>Eat Apple</button>
+//     </div>
+//   );
+// }
+
+// export default AppleCounter;
+import React,{useState,useEffect,useRef} from "react";
+function CounterWithPrev(){
+  const [count,setCount]=useState(0);
+  const prevCounterRef=useRef();
+  //create a ref to store the previous value
+
+  useEffect(()=>{
+    prevCounterRef.current=count;
+  },[count])
+  return(
+    <div>
+      <p>Current count :{count}</p>
+      <p>PrevCount : {prevCounterRef.current}</p>
+      <button onClick={()=>setCount(count+1)}>Increment</button>
+    </div>
+
+
+  )
+}
+export default CounterWithPrev;
